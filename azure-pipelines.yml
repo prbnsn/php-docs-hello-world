@@ -24,5 +24,4 @@ steps:
 
 - script: |
     composer install --no-interaction --prefer-dist
-    composer self-update --1
   displayName: 'composer install'
