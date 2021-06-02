@@ -1,13 +1,5 @@
 {
-    "name": "petes test",
-    "description": "Testing PHP deploy.",
-    "minimum-stability": "dev",
     "require": {
-        "php": ">=5.5.0"
-    },
-    "autoload": {
-        "psr-0": {
-            "HelloWorld": "src/"
-        }
+        "php": ">=7.2.0"
     }
 }
