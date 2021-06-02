@@ -20,7 +20,6 @@
     "drupal/admin_toolbar": "^1.0",
     "drupal/core": "8.7.7",
     "drush/drush": "^8.1",
-    "wikimedia/composer-merge-plugin": "1.4.1",
     "swiftmailer/swiftmailer": "5.4.8",
     "beanstream/beanstream": "1.0.1",
     "mikehaertl/php-pdftk": "0.4.0",
@@ -29,7 +28,6 @@
     "aws/aws-sdk-php": "3.72.0",
     "drupal/content_access": "1.x-dev",
     "drupal/acquia_connector": "^1.16",
-    "drupal/acquia_search": "^1.16",
     "drupal/ctools": "3.0",
     "drupal/ctools_block": "3.0",
     "drupal/ctools_views": "3.0",
@@ -146,15 +144,6 @@
     }
   },
   "scripts": {
-    "post-install-cmd": [
-      "@composer drupal-scaffold"
-    ],
-    "post-update-cmd": [
-      "@composer drupal-scaffold"
-    ],
-    "drupal-scaffold": [
-      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
-    ]
   },
   "config": {
     "platform": {
