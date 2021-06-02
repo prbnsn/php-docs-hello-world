@@ -1,43 +1,13 @@
 {
-  "name": "my hacked together composer file",
-  "description": "Test PHP project",
-  "type": "project",
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
+    "name": "petes test",
+    "description": "Testing PHP deploy.",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.0"
     },
-    {
-      "type": "composer",
-      "url": "https://asset-packagist.org"
+    "autoload": {
+        "psr-0": {
+            "HelloWorld": "src/"
+        }
     }
-  ],
-  "require": {
-  },
-  "require-dev": {
-  },
-  "conflict": {
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "extra": {
-    "installer-paths": {
-      "docroot/core": ["type:drupal-core"],
-      "docroot/libraries/{$name}": ["type:drupal-library"],
-      "docroot/modules/contrib/{$name}": ["type:drupal-module"],
-      "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
-      "docroot/themes/contrib/{$name}": ["type:drupal-theme"]
-    },
-    "enable-patching": true,
-    "patches": {
-      
-    }
-  },
-  "scripts": {
-  },
-  "config": {
-    "platform": {
-      "php": "7.3"
-    }
-  }
 }
